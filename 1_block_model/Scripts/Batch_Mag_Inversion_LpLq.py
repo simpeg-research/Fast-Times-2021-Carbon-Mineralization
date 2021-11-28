@@ -32,7 +32,7 @@ import numpy as np
 #Reproducible science
 np.random.seed(518936)
 
-mesh = ds.TreeMesh.read_UBC('mesh_CaMP_jw.ubc')
+mesh = ds.TreeMesh.read_UBC('mesh_CaMP.ubc')
 
 data_mag = io_utils.read_mag3d_ubc('1block_magnetic_data.obs')
 print("maximum mag data {} nT".format(data_mag.dobs.max()))

@@ -48,14 +48,14 @@ np.random.seed(518936)
 # In[4]:
 
 
-mesh = ds.TreeMesh.read_UBC('mesh_CaMP_jw.ubc')
+mesh = ds.TreeMesh.read_UBC('mesh_CaMP.ubc')
 
 
 # ## Load True geological model for comparison with inversion result
 
 # In[9]:
 
-true_geology = mesh.read_model_UBC('CaMP_magnetic_synthetic_model_jw.ubc')
+true_geology = mesh.read_model_UBC('CaMP_magnetic_synthetic_model.ubc')
 true_geology[true_geology==0.15] = 2
 true_geology[true_geology==0.05] = 1
 
@@ -64,8 +64,8 @@ true_geology[true_geology==0.05] = 1
 
 # In[12]:
 
-data_grav = io_utils.read_grav3d_ubc('grav_data_jw.obs')
-data_mag = io_utils.read_mag3d_ubc('magnetic_data_ta.obs')
+data_grav = io_utils.read_grav3d_ubc('grav_data.obs')
+data_mag = io_utils.read_mag3d_ubc('magnetic_data.obs')
 
 
 # In[15]:

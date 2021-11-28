@@ -28,12 +28,12 @@ import numpy as np
 #Reproducible science
 np.random.seed(518936)
 
-mesh = ds.TreeMesh.read_UBC('mesh_CaMP_jw.ubc')
+mesh = ds.TreeMesh.read_UBC('mesh_CaMP.ubc')
 
-data_mag = io_utils.read_mag3d_ubc('magnetic_data_ta.obs')
+data_mag = io_utils.read_mag3d_ubc('magnetic_data.obs')
 print('TA mag dataset')
 print("maximum mag data {} nT".format(data_mag.dobs.max()))
-data_grav = io_utils.read_grav3d_ubc('grav_data_jw.obs')
+data_grav = io_utils.read_grav3d_ubc('grav_data.obs')
 
 actvMap = maps.IdentityMap(mesh)
 
