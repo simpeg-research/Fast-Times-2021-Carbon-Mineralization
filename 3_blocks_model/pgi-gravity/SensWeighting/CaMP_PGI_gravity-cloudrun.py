@@ -257,7 +257,7 @@ import pickle
 # In[28]:
 
 
-pickle.dump(gmmref, open("GMMRF-_gravity-singlephysics.p", "wb"))
+pickle.dump(gmmref, open("GMM_gravity-singlephysics.p", "wb"))
 
 
 # In[ ]:

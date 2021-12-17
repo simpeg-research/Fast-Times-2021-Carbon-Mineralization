@@ -182,7 +182,7 @@ def joint_inversion(invdict):
     #set global proportions; low-impact as long as not 0 or 1 (total=1)
     gmmref.weights_ = np.r_[0.9, 0.075, 0.025]
 
-    pickle.dump(gmmref, open(invdict['folder_name'] + os.path.sep + "GMMRF_joint.p", "wb"))
+    pickle.dump(gmmref, open(invdict['folder_name'] + os.path.sep + "GMM_joint.p", "wb"))
     # ## Create PGI regularization
 
     # In[19]:
