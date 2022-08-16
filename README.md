@@ -10,18 +10,20 @@ https://fasttimesonline.co/geophysical-inversions-to-delineate-rocks-with-co-2-s
 - model setup 
 - magnetics
    - [magnetics L2](./3_blocks_model/L2/Script/Batch_Mag_Inversion_L2.py)
-   - magnetics L01 
+   - [magnetics L01](./3_blocks_model/Lpq/Script/Batch_Mag_Inversion_LpLq_mag.py)
    - volume estimates 
-   - one block inversion
 - gravity 
-   - gravity L2 
-   - gravity L01 
+   - [gravity L2](./3_blocks_model/L2/Script/Batch_Mag_Inversion_L2.py) (same script as the Mag L2)
+   - [gravity L01](./3_blocks_model/Lpq/Script/Batch_Mag_Inversion_LpLq_grav.py)
    - volume estimates 
-   - one block inversion
+- one block inversions
+   - [grav and mag L2](./1_block_model_4k/Scripts/Batch_Inversions_L2.py)
+   - [magnetics L01](./1_block_model_4k/Scripts/Batch_Mag_Inversion_LpLq.py)
+   - [gravity L01](./1_block_model_4k/Scripts/Batch_Grav_Inversion_LpLq.py)
 - PGI
-   - individual magnetics 
-   - individual gravity 
-   - joint pgi
+   - [individual magnetics](./3_blocks_model/pgi-magnetic/FINAL_DepthWeighting/CaMP_PGI_magnetic-cloudrun.py)
+   - [individual gravity](./3_blocks_model/pgi-gravity/FINAL_DepthWeighting/CaMP_PGI_gravity-cloudrun.py)
+   - [joint pgi](./3_blocks_model/pgi-joint/FINAL_DepthWeighting/CHOICE_GMM2_DW_ScaleMag1.0_Smoothden0.01_RERUN.py)
 - cumulative volume estimates
 
 ### Notebooks for figures
